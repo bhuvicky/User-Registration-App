@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">            SQLite Training     </string>
+    <string name="et_email">            Email               </string>
+    <string name="et_password">         Password            </string>
+    <string name="btnLogin">            Sign In             </string>
+    <string name="btn_Sign_Up_Here">    Sign Up Here        </string>
+    <string name="tv_not_have_account"> Do not have account yet? </string>
+    <string name="et_name">             Name                </string>
+    <string name="et_mobile_no">        Mobile No           </string>
+    <string name="tv_state">            State               </string>
+    <string name="tv_district">         District            </string>
+    <string name="btn_cancel">          Cancel              </string>
+    <string-array name="title">
+        <item>ID Number</item>
+        <item>Name</item>
+        <item>Email</item>
+        <item>Password</item>
+        <item>Mobile No</item>
+        <item>State</item>
+        <item>District</item>
+    </string-array>
+
+
+
+    <string-array name="state_name">
+        <item> Tamil Nadu </item>
+        <item> Karnataka  </item>
+        <item> Kerala     </item>
+    </string-array>
+    <string-array name="district_in_tami_nadu">
+        <item> Chennai </item>
+        <item> Madurai </item>
+        <item> Kovai   </item>
+        <item> Trichy  </item>
+        <item> Thirunelveli </item>
+    </string-array>
+    <string-array name="district_in_karnataka">
+        <item> Bangalore </item>
+        <item> Mysore    </item>
+        <item> Mangalore </item>
+        <item> Dharwad   </item>
+        <item> Davangere </item>
+    </string-array>
+    <string-array name="district_in_kerala">
+        <item> Cochin     </item>
+        <item> Trisur     </item>
+        <item> Trivandram </item>
+        <item> Wayanadu   </item>
+        <item> Palakad    </item>
+    </string-array>
+    <string name="btn_submit">SUBMIT</string>
+</resources>

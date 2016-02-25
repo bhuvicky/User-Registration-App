@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bhuvanesh.sqlitetraining.SignUp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        android:hint="@string/et_name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:inputType="textCapCharacters"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEmail"
+        android:hint="@string/et_email"
+        android:layout_below="@+id/etName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPassword"
+        android:hint="@string/et_password"
+        android:layout_below="@+id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMobileNo"
+        android:hint="@string/et_mobile_no"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="phone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvState"
+        android:text="@string/tv_state"
+        android:layout_below="@+id/etMobileNo"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/spinState"
+        android:entries="@array/state_name"
+        android:layout_below="@+id/etMobileNo"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/btnSubmit"
+        android:layout_alignStart="@+id/btnSubmit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDistrict"
+        android:text="@string/tv_district"
+        android:layout_below="@+id/tvState"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/spinDistrict"
+        android:layout_below="@+id/spinState"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/spinState"
+        android:layout_alignStart="@+id/spinState" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnSubmit"
+        android:text="@string/btn_submit"
+        android:textSize="20dp"
+        android:onClick="storeDataInDatabase"
+        android:layout_below="@+id/spinDistrict"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+
+</RelativeLayout>
